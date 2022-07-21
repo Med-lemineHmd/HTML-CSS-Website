@@ -1,0 +1,909 @@
+/* 1 - COMMON STYLES
+   2 - GENERAL STYLES
+   3 - SECTIONS
+     3.1 HEADER 
+     3.2 SECTION 1: We are creative
+     3.3 SECTION 2 : Welcome to website
+     3.4 SECTION 3: Featured works
+     3.5 SECTION 4: What we offer
+     3.6 SECTION 5: Why choose us
+     3.7 SECTION 6: Numbers
+     3.8 SECTION 7: Pricing table
+     3.9 SECTION 8: Mo Lemine
+     3.10 SECTION 9: Our team
+     3.11 SECTION 10: Recent news
+     3.12 SECTION 11: Footer section
+*/
+
+/********************************************* 1 COMMON STYLES *************************************************************/
+/************************** sec2:Welcome - sec4:What we offer -> after *********************************/
+
+
+
+
+/********************************************* 2 GENERAL STYLES ******************************************************/
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #04b1f4;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.md {
+  margin: 0px 5%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 170px;
+}
+
+.H-line {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #04b1f4;
+  margin: auto;
+  margin-top: -24px;
+}
+
+/**************************************************** 3 SECTIONS ***************************************************************/
+/**************************************************** 3.1 HEADER  *********************************************************/
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  height: 60px;
+  float: left;
+}
+
+.list {
+  float: right;
+}
+
+.list li {
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.header .list > li > a:after,
+.header .list > li > a.active:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background-color: #b3b1b1;
+  margin-top: 2px;
+  transition: 0.5s;
+}
+
+.header .list > li > a.active:after {
+  width: 100%;
+}
+
+.header .list > li > a:hover:after {
+  width: 100%;
+}
+
+.blg {
+  position: relative;
+}
+
+.blg-p {
+  position: absolute;
+  background-color: #b3b1b1;
+  text-align: center;
+  width: 115px;
+  padding: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  left: 78%;
+  margin-top: 10px;
+}
+
+.pst {
+  color: black;
+  display: block;
+  padding: 10px;
+}
+
+.blg:hover + .blg-p{
+  visibility: visible;
+  opacity:1;
+}
+/***************************************** 3.2 SECTION 1: We are creative   **************************************************/
+
+.sec1-parent {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/img.png);
+  background-size: cover;
+  position: relative;
+}
+
+.sec1-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sec1-title {
+  font-size: 54px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sec1-para1 {
+  margin-top: -34px;
+  color: rgb(255, 237, 203);
+  letter-spacing: 1px;
+}
+
+.sec1-btn1,
+.sec1-btn2 {
+  height: 50px;
+  width: 140px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sec1-btn1 {
+  background-color: #b3b1b1;
+  border: 1px solid #b3b1b1;
+  margin-right: 6px;
+}
+
+.sec1-btn2 {
+  background-color: #04b1f4;
+  color: white;
+  border: 1px solid #04b1f4;
+}
+
+.sec1-btn1:hover {
+  background: transparent;
+  color: #b3b1b1;
+}
+
+.sec1-btn2:hover {
+  background: transparent;
+  color: #04b1f4;
+}
+
+/**************************************** 3.3 SECTION 2 : Welcome to website ************************************************/
+
+.section-2 {
+  height: 500px;
+}
+.sec2-parent {
+  width: 100%;
+  overflow: auto;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.sec2-child {
+  position: relative;
+  width: 29%;
+  height: 230px;
+  border: 1px solid #a8a8a8;
+  float: left;
+  transition: 0.5s;
+}
+
+.sec2-child:hover p {
+  color: white;
+}
+
+.sec2-parent div > i.icon {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 30px;
+  color: #04b1f4;
+}
+
+.sec2-child:hover .icon,
+.sec2-child:hover h2 {
+  color: #ffc524;
+}
+
+.sec2-parent h2 {
+  color: #04b1f4;
+}
+
+.sec2-parent p {
+  letter-spacing: 2px;
+}
+
+.sec2-parent a {
+  display: block;
+  text-decoration: none;
+  color: #04b1f4;
+}
+
+.sec2-child:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  background-color: #2C394B;
+}
+
+.sec2-child:hover:after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/**************************************** 3.4 SECTION 3: Featured works  **********************************************/
+
+.section-3 {
+  background-color: #e8e8e8;
+  height: 150vh;
+}
+
+.section-3 .title {
+  padding-top: 70px;
+}
+
+.sec3-parent {
+  overflow: auto;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.sec3-child {
+  position: relative;
+  float: left;
+  width: 30%;
+  margin-bottom: 20px;
+  transition: 0.5s;
+  text-align: center;
+  background-color: white;
+}
+
+.sec3-child img {
+  width: 80%;
+  padding: 10%;
+}
+
+.sec3-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.sec3-child:hover .sec3-desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sec3-desc .sec3-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sec3-desc .category {
+  text-transform: uppercase;
+  color: #04b1f4;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 1s, opacity 0.5s;
+  transition-delay: 0;
+  top: 15px;
+  position: relative;
+}
+
+.sec3-child:hover .sec3-desc .category,
+.sec3-child:hover .sec3-desc .sec3-title,
+.sec3-child:hover .sec3-desc a {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec3-desc .sec3-title {
+  font-size: 18px;
+  color: #c1c0c0;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 1s, opacity 0.5s;
+  transition-delay: 0.4s;
+  top: 15px;
+  position: relative;
+}
+
+.sec3-desc a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-color: #c1c0c0;
+  border: 1px solid #0b0c0c;
+  position: relative;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 1s, opacity 0.5s;
+  transition-delay: 0.6s;
+  color: #0b0c0c;
+}
+
+.sec3-desc a i {
+  line-height: 45px;
+  font-size: 25px;
+}
+
+/************************************** 3.5 SECTION 4: What we offer ***************************************************/
+.sec4-parent {
+  overflow: auto;
+  margin-top: 70px;
+}
+
+.sec4-child {
+  position: relative;
+  width: 350px;
+  height: 170px;
+  margin-bottom: 20px;
+  border: 1px solid #a8a8a8;
+  float: left;
+  transition: 0.5s;
+}
+
+.sec4-child .icon {
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  top: 26px;
+  color: #04b1f4;
+}
+
+.sec4-child:hover .icon,
+.sec4-child:hover .sec4-child-title {
+  color: #ffc524;
+}
+
+.sec4-child-title {
+  text-transform: capitalize;
+  margin: 30px 0px 15px 70px;
+  transition: 1s;
+  color: #04b1f4;
+}
+
+.sec4-child-para {
+  text-transform: capitalize;
+
+  margin: 0px 0px 15px 70px;
+  line-height: 1.6;
+  color: #999;
+}
+
+.sec4-child:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  background-color: #2C394B;
+}
+
+.sec4-child:hover:after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/********************************************** 3.6 SECTION 5: Why choose us ***************************************/
+
+.sec5 {
+  background-color: #f9f9f9;
+  margin-top: 50px;
+}
+
+.sec5-parent {
+  overflow: auto;
+}
+
+.section-5-div1,
+.section-5-div2 {
+  width: 50%;
+  float: left;
+}
+
+.section-5-div1 .title {
+  text-align: left;
+}
+
+.section-5-div1 .H-line {
+  margin: -10px 0 45px 0;
+}
+
+.section-5-para {
+  padding-right: 20px;
+  color: #999;
+  line-height: 1.4;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.section-5-list {
+  list-style: none;
+}
+
+.section-5-list li i {
+  border: 1px solid #04b1f4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: #04b1f4;
+  padding: 3px;
+}
+
+.section-5-list li {
+  margin-bottom: 10px;
+  color: #999;
+}
+
+.sec5-img {
+  width: 400px;
+  margin-top: 150px;
+}
+
+.section-5-div2 {
+  text-align: center;
+}
+
+.div2-list li {
+  display: inline-block;
+  background-color: #a8a8a8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.div2-list li.active,
+.div2-list li:hover {
+  background-color: #04b1f4;
+}
+
+/********************************************* 3.7 SECTION 6: Numbers **************************************/
+
+.section-6 {
+  position: relative;
+  background-image: url(../images/bgnum.jpg);
+  height: 350px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parent {
+  overflow: auto;
+  padding-top: 130px;
+}
+
+.sec-6-child {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.sec-6-child .icon {
+  color: #04b1f4;
+  font-size: 30px;
+}
+
+.sec-6-title,
+.sec-6-para {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+/*************************************** 3.8 SECTION 7: Pricing table ************************************************/
+
+.section-7 .H-line {
+  margin-top: 7px;
+}
+.sec7-parent {
+  width: 100%;
+  overflow: auto;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+.sec7-child {
+  position: relative;
+  height: 380px;
+  width: 340px;
+  border: 1px solid #a8a8a8;
+  float: left;
+  transition: 1s;
+}
+
+.sec7-para {
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 20px;
+}
+
+.sec7-sp1,
+.sec7-sp2 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sec7-sp1 {
+  font-size: 55px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #04b1f4;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.sec7-sp2 {
+  margin-top: -32px;
+  margin-bottom: 40px;
+}
+
+.sec7-desc-par {
+  text-align: center;
+  color: #999;
+}
+
+.sec7-under-btn {
+  border: 2px solid #04b1f4;
+  background-color: white;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  width: 130px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sec7-child:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #2C394B;
+  transition: 0.5s;
+}
+
+.sec7-child:hover:after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sec7-child:hover .sec7-para,
+.sec7-child:hover .sec7-sp1,
+.sec7-child:hover .sec7-sp2 {
+  color: #04b1f4;
+}
+
+.sec7-child:hover .sec7-desc-par {
+  color: #a8a8a8;
+}
+
+.sec7-under-btn:hover {
+  background-color: #04b1f4;
+}
+
+/***************************************** 3.9 SECTION 8: Mo Lemine *******************************************************/
+
+.section-8 {
+  position: relative;
+  background-image: url(../images/bg-n.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 350px;
+}
+
+.sec8-parent {
+  overflow: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.sec8-child {
+  float: left;
+  width: 50%;
+  color: white;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.sec8-child .div1,
+.sec8-child .div2 {
+  position: relative;
+  padding: 30px 20px 20px 150px;
+}
+
+.sec8-child .div1 img,
+.sec8-child .div2 img {
+  position: absolute;
+}
+
+.sec8-child h3,
+.sec8-child span {
+  margin: 40px 0 15px 110px;
+  line-height: 0;
+}
+
+
+
+.sec8-child span {
+  color: #04b1f4;
+}
+
+.sec8-child p {
+  margin-left: 160px;
+}
+
+/**************************************** 3.10 SECTION 9: Our team *******************************************/
+
+.sec9-parent {
+  overflow: auto;
+  margin-top: 70px;
+}
+.sec9-chlid {
+  float: left;
+  width: 350px;
+  height: 320px;
+  background-color: #a8a8a8;
+  text-align: center;
+  position: relative;
+  padding: 10px 0;
+}
+
+.sec9-chlid .div-img {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.sec9-chlid .div-desc {
+  margin-top: -20px;
+}
+
+.sec9-chlid h3 {
+  color: black;
+}
+
+.sec9-chlid span {
+  color: white;
+}
+
+.sec9-chlid:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0;
+}
+.sec9-chlid:hover:after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: 1s;
+}
+
+.sec9-icons a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #04b1f4;
+  color: #fff;
+  margin-left: auto;
+}
+
+.sec9-icons a i {
+  line-height: 45px;
+}
+
+.sec9-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sec9-chlid:hover .sec9-icons {
+  visibility: visible;
+  opacity: 1;
+}
+/**************************************** 3.11 SECTION 10: Recent news  *************************************/
+
+.sec10-parent {
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  background-color: rgb(247, 245, 245);
+  margin-top: 70px;
+}
+
+.sec10-child {
+  width: 30%;
+  height: 450px;
+  float: left;
+  background-color: white;
+  transition: 1.5s;
+  position: relative;
+}
+
+.sec10-img {
+  width: 200px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.sec10-child i,
+.sec10-child span {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.sec10-child i,
+.sec10-child a {
+  color: #7ca2fa;
+}
+
+.sec10-child p {
+  font-size: 14px;
+  color: gray;
+}
+
+.sec10-child a {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.sec10-child > img,
+.sec10-child > i,
+.sec10-child > h3,
+.sec10-child > p,
+.sec10-child > a {
+  margin-left: 18px;
+}
+
+.sec10-child:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+  transition: 1s;
+  opacity: 0;
+  background-color: #6195ff;
+}
+.sec10-child:hover:after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+/*********************************************** 3.12 SECTION 11: Footer section ************************************************/
+
+.footer {
+  background-color: #a8a8a8;
+  text-align: center;
+  height: 250px;
+  padding: 40px 0;
+}
+
+.footer img {
+  margin-left: 50px;
+}
+
+.footer-links {
+  list-style: none;
+  margin: -40px 0 20px 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #04b1f4;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.footer-links li a {
+  display: block;
+}
+
+.footer-links a i {
+  line-height: 50px;
+  color: white;
+  font-size: 25px;
+}
+
+.footer-links li:after {
+  position: absolute;
+  content: "";
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #1f4690;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0;
+}
+.footer-links li:hover:after {
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 50%;
+}
+.footer p {
+  font-size: 12px;
+  text-transform: uppercase;
+}
